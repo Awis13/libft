@@ -6,13 +6,14 @@
 /*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 13:50:15 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/11/15 14:05:15 by Nipostni         ###   ########.fr       */
+/*   Updated: 2021/11/15 14:11:58 by Nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
 int	ft_isalpha(int argument);
+int	ft_isdigit(int argument);
 
 int	main(void)
 {
@@ -27,4 +28,15 @@ int	main(void)
 	printf("%d, testing %c \n", ft_isalpha(to_pass), to_pass);
 	to_pass = 'g';
 	printf("%d, testing %c \n", ft_isalpha(to_pass), to_pass);
+	printf("\n");
+
+	to_pass = '_';
+	printf("*** ft_isdigit ***\n");
+	printf("%d, testing %c \n", ft_isdigit(to_pass), to_pass);
+	to_pass = '1';
+	printf("%d, testing %c \n", ft_isdigit(to_pass), to_pass);
+	to_pass = 'A';
+	printf("%d, testing %c \n", ft_isdigit(to_pass), to_pass);
+	to_pass = '6';
+	printf("%d, testing %c \n", ft_isdigit(to_pass), to_pass);
 }

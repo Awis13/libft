@@ -6,7 +6,7 @@
 /*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 13:50:15 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/11/15 14:11:58 by Nipostni         ###   ########.fr       */
+/*   Updated: 2021/11/15 14:29:28 by Nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,17 @@
 
 int	ft_isalpha(int argument);
 int	ft_isdigit(int argument);
+int	test_ft_isdigit(void);
+int	test_ft_isalpha(void);
 
 int	main(void)
+{
+	test_ft_isalpha();
+	test_ft_isdigit();
+}
+
+/* Testing ft_isalpha */
+int	test_ft_isalpha(void)
 {
 	int	to_pass;
 
@@ -29,6 +38,12 @@ int	main(void)
 	to_pass = 'g';
 	printf("%d, testing %c \n", ft_isalpha(to_pass), to_pass);
 	printf("\n");
+}
+
+/* Testing ft_isdigit */
+int	test_ft_isdigit(void)
+{
+	int	to_pass;
 
 	to_pass = '_';
 	printf("*** ft_isdigit ***\n");

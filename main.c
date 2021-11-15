@@ -6,7 +6,7 @@
 /*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 13:50:15 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/11/15 14:43:58 by Nipostni         ###   ########.fr       */
+/*   Updated: 2021/11/15 14:50:38 by Nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,11 @@ int	test_ft_isalnum(void);
 int	main(void)
 {
 	test_ft_isalpha();
+	printf("\n");
 	test_ft_isdigit();
+	printf("\n");
 	test_ft_isalnum();
+	printf("\n");
 }
 
 /* Testing ft_isalpha */
@@ -40,7 +43,7 @@ int	test_ft_isalpha(void)
 	printf("%d, testing %c \n", ft_isalpha(to_pass), to_pass);
 	to_pass = 'g';
 	printf("%d, testing %c \n", ft_isalpha(to_pass), to_pass);
-	printf("\n");
+	
 }
 
 /* Testing ft_isdigit */
@@ -71,6 +74,6 @@ int	test_ft_isalnum(void)
 	printf("%d, testing %c \n", ft_isalnum(to_pass), to_pass);
 	to_pass = 'A';
 	printf("%d, testing %c \n", ft_isalnum(to_pass), to_pass);
-	to_pass = '6';
+	to_pass = '*';
 	printf("%d, testing %c \n", ft_isalnum(to_pass), to_pass);
 }

@@ -17,16 +17,9 @@ unsigned int	ft_strlen(const char *str)
 	int	i;
 
 	i = 0;
-	while(str)
+	while(str[i])
 	{
-		printf("%c", str[i]);
 		i++;
 	}
 	return (i);
-}
-
-int main(void)
-{
-	char c[] = "E";
-	printf("%d", ft_strlen(c));
 }

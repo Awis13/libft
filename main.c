@@ -17,11 +17,13 @@ int	ft_isdigit(int argument);
 int	ft_isalnum(int argument);
 int	ft_isascii(int argument);
 int	ft_isprint(int argument);
+unsigned int	ft_strlen(const char *str);
 int	test_ft_isdigit(void);
 int	test_ft_isalpha(void);
 int	test_ft_isalnum(void);
 int	test_ft_isascii(void);
 int	test_ft_isprint(void);
+int	test_ft_strlen(void);
 
 int	main(void)
 {
@@ -34,6 +36,8 @@ int	main(void)
 	test_ft_isascii();
 	printf("\n");
 	test_ft_isprint();
+	printf("\n");
+	test_ft_strlen();
 	printf("\n");
 }
 
@@ -116,4 +120,11 @@ int	test_ft_isprint(void)
 	printf("%d, testing %c \n", ft_isprint(to_pass), to_pass);
 	to_pass = '*';
 	printf("%d, testing %c \n", ft_isprint(to_pass), to_pass);
+}
+
+/* Testing ft_strlen */
+int	test_ft_strlen(void)
+{
+	char c[40] = "TEST TEST TEST!@#!@#!@#";
+	printf("char to test TEST TEST TEST!@#!@#!@# - %d", ft_strlen(c));
 }

@@ -6,7 +6,7 @@
 /*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 13:50:15 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/11/15 14:56:38 by Nipostni         ###   ########.fr       */
+/*   Updated: 2021/11/16 10:56:40 by Nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,12 @@ int	ft_isalpha(int argument);
 int	ft_isdigit(int argument);
 int	ft_isalnum(int argument);
 int	ft_isascii(int argument);
+int	ft_isprint(int argument);
 int	test_ft_isdigit(void);
 int	test_ft_isalpha(void);
 int	test_ft_isalnum(void);
 int	test_ft_isascii(void);
+int	test_ft_isprint(void);
 
 int	main(void)
 {
@@ -30,6 +32,8 @@ int	main(void)
 	test_ft_isalnum();
 	printf("\n");
 	test_ft_isascii();
+	printf("\n");
+	test_ft_isprint();
 	printf("\n");
 }
 
@@ -96,4 +100,20 @@ int	test_ft_isascii(void)
 	printf("%d, testing %c \n", ft_isascii(to_pass), to_pass);
 	to_pass = '*';
 	printf("%d, testing %c \n", ft_isascii(to_pass), to_pass);
+}
+
+/* Testing ft_isprint */
+int	test_ft_isprint(void)
+{
+	int	to_pass;
+
+	to_pass = '_';
+	printf("*** ft_isprint ***\n");
+	printf("%d, testing %c \n", ft_isprint(to_pass), to_pass);
+	to_pass = '\f';
+	printf("%d, testing unprintable %c \n", ft_isprint(to_pass), to_pass);
+	to_pass = 'A';
+	printf("%d, testing %c \n", ft_isprint(to_pass), to_pass);
+	to_pass = '*';
+	printf("%d, testing %c \n", ft_isprint(to_pass), to_pass);
 }

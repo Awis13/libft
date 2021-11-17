@@ -12,15 +12,10 @@
 
 #include <stdio.h>
 
-int	ft_isalpha(int argument)
+int	ft_isalpha(int c)
 {
-	char	c;
-
-	c = argument + 0;
-	if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z')
-	{
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
-	}
 	else
 		return (0);
 }

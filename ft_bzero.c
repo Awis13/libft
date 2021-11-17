@@ -14,17 +14,9 @@
 #include <stdio.h>
 #include <string.h>
 
-void *ft_memset(void *s, int c, size_t n);
-void ft_bzero (void *b, size_t length)
+void	*ft_memset(void *s, int c, size_t n);
+
+void	ft_bzero(void *b, size_t length)
 {
 	ft_memset(b, 0, length * sizeof(char));
-}
-
-int	main(void)
-{
-	char str[20] = "1234567890";
-	ft_bzero(str, 4);
-	printf("%s\n", str);
-	printf("%d\n", str[1]);
-
 }

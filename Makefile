@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rchallie <rchallie@student.42.fr>          +#+  +:+       +#+         #
+#    By: Nipostni <awis@me.com>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/07 11:05:52 by rchallie          #+#    #+#              #
-#    Updated: 2020/08/13 22:17:48 by rchallie         ###   ########.fr        #
+#    Updated: 2021/11/24 13:14:04 by Nipostni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ ft_isalnum.c	\
 ft_isalpha.c	\
 ft_strlen.c	\
 ft_memset.c	\
+ft_memcpy.c \
 
 
 

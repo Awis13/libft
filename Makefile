@@ -6,7 +6,7 @@
 #    By: Nipostni <awis@me.com>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/07 11:05:52 by rchallie          #+#    #+#              #
-#    Updated: 2021/11/24 13:14:04 by Nipostni         ###   ########.fr        #
+#    Updated: 2021/12/01 12:23:54 by Nipostni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,17 @@ ft_strlen.c	\
 ft_memset.c	\
 ft_memcpy.c \
 ft_strlcat.c \
+ft_memmove.c \
+ft_toupper.c \
+ft_strchr.c \
+ft_strrchr.c \
+ft_strlcat.c	\
+ft_strlcpy.c \
+ft_tolower.c	\
+ft_toupper.c	\
+ft_strncmp.c	\
+ft_memchr.c	\
+
 
 
 NAME = libft.a

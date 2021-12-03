@@ -30,6 +30,8 @@ ft_tolower.c	\
 ft_toupper.c	\
 ft_strncmp.c	\
 ft_memchr.c	\
+ft_strnstr.c 	\
+ft_memcmp.c \
 
 
 

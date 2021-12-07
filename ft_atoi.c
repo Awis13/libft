@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
+/*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 10:25:03 by nipostni          #+#    #+#             */
-/*   Updated: 2021/12/03 11:13:20 by nipostni         ###   ########.fr       */
+/*   Updated: 2021/12/07 11:33:10 by Nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int ft_atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
-	int i;
-	long number;
-	char sign;
+	int		i;
+	long	number;
+	char	sign;
 
 	number = 0;
 	i = 0;
 	sign = 1;
-	
-	while (nptr[i] == ' ' || nptr[i] == '\t' || nptr[i] == '\n' || nptr[i] == '\f' || nptr[i] == '\r' || nptr[i] == '\v')
+	while (nptr[i] == ' ' || nptr[i] == '\t' || nptr[i] == '\n'
+		|| nptr[i] == '\f' || nptr[i] == '\r' || nptr[i] == '\v')
 			i++;
-
 	if ((nptr[i] == '+') || (nptr[i] == '-'))
 	{
-		if(nptr[i] == '-')
+		if (nptr[i] == '-')
 		{
 			sign = -sign;
 		}
@@ -40,9 +39,7 @@ int ft_atoi(const char *nptr)
 		number = number * 10 + (nptr[i] - '0');
 		i++;
 	}
-
-	return(number * sign);
-	
+	return (number * sign);
 }
 
 // int main(void)

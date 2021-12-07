@@ -6,7 +6,7 @@
 #    By: Nipostni <awis@me.com>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/07 11:05:52 by rchallie          #+#    #+#              #
-#    Updated: 2021/12/01 12:23:54 by Nipostni         ###   ########.fr        #
+#    Updated: 2021/12/07 11:22:42 by Nipostni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,7 @@ ft_strncmp.c	\
 ft_memchr.c	\
 ft_strnstr.c 	\
 ft_memcmp.c \
+ft_calloc.c \
 
 
 

@@ -1,39 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/24 11:39:48 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/12/07 12:49:12 by Nipostni         ###   ########.fr       */
+/*   Created: 2021/12/07 12:20:58 by Nipostni          #+#    #+#             */
+/*   Updated: 2021/12/07 12:37:28 by Nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
-unsigned int	ft_strlen(const char *str);
-
-size_t	ft_strlcpy(char *dst, const char *src, size_t n)
+char	*ft_strdup(const char *s)
 {
-	const size_t	srclen = ft_strlen(src);
+	int		len;
+	char	*t;
 
-	if (srclen + 1 < n)
-	{
-		ft_memcpy(dst, src, srclen + 1);
-	}
-	else if (n != 0)
-	{
-		ft_memcpy(dst, src, n - 1);
-		dst[n - 1] = '\0';
-	}
-	return (srclen);
+	len = ft_strlen(s);
+	t = malloc(len + 1);
+	ft_memcpy(t, s, len);
+	t[len] = '\0';
+	return (t);
 }
 
-//int main (void)
+//int main(void)
 //{
-//	char src [20] = "TESTsadasdasda";
-//	char dst [20] = "DESTANATION";
-//	ft_strlcpy(dst, src, 7);
-//	printf("%s", dst);
+//    const char *s1 = "String";
+//    char *s2 = ft_strdup(s1);
+//	printf("%s, %s", s1, s2);
 //}

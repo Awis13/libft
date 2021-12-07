@@ -6,7 +6,7 @@
 #    By: Nipostni <awis@me.com>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/07 11:05:52 by rchallie          #+#    #+#              #
-#    Updated: 2021/12/07 11:22:42 by Nipostni         ###   ########.fr        #
+#    Updated: 2021/12/07 12:46:34 by Nipostni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,9 @@ ft_memchr.c	\
 ft_strnstr.c 	\
 ft_memcmp.c \
 ft_calloc.c \
+ft_atoi.c	\
+ft_strdup.c	\
+
 
 
 
@@ -52,7 +55,7 @@ CC = gcc
 $(OBJS_DIR)%.o : %.c libft.h
 	@mkdir -p $(OBJS_DIR)
 	@echo "Compiling: $<"
-	@clang $(CC_FLAGS) -c $< -o $@
+	@clang $(CC_FLAGS) -c $< -o $@ -Wextra -Wall -Werror
 
 $(NAME): $(OBJECTS_PREFIXED)
 	@ar r $(NAME) $(OBJECTS_PREFIXED)

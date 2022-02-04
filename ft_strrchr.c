@@ -6,23 +6,24 @@
 /*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 15:36:11 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/11/25 16:43:47 by Nipostni         ###   ########.fr       */
+/*   Updated: 2022/02/03 15:47:41 by Nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "libft.h"
+#include <string.h>
 
 char	*ft_strrchr(const char *str, int ch)
 {
 	int	i;
-
-	i = ft_strlen(str);
+	const char *strt = str;
+	i = ft_strlen(strt);
 	while (i >= 0)
 	{
-		if (str[i] == ch)
+		if (strt[i] == ch)
 		{
-			return ((char *)str + i);
+			return ((char *)strt + i);
 		}
 		i--;
 	}
@@ -31,12 +32,12 @@ char	*ft_strrchr(const char *str, int ch)
 
 // int main(void)
 // {
-// const char str[] = "00000000test0000    00013746=-=-=11!!!!0test123";
-// const char ch = '1';
+// 	const char str[] = "123456789";
+// 	const char ch = '2';
 
-// ft_strrchr(str, ch);
+// 	// ft_strrchr(str, ch);
 
-// printf("String after |%c| is - |%s|\n", ch, ft_strrchr(str, ch));
-// printf("String after |%c| is - |%s|\n", ch, strrchr(str, ch));
+// 	printf("String after |%c| is - |%s|\n", ch, ft_strrchr(str, ch));
+// 	//printf("String after |%c| is - |%s|\n", ch, strrchr(str, ch));
 
 // } 

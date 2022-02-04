@@ -3,20 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
+/*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 14:06:18 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/11/15 14:10:21 by Nipostni         ###   ########.fr       */
+/*   Updated: 2021/12/07 22:40:09 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_isdigit(int argument)
+int	ft_isdigit(int c)
 {
-	char	c;
-
-	c = argument + 0;
+	c = c + 0;
 	if (c >= '0' && c <= '9')
 	{
 		return (1);

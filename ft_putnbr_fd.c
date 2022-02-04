@@ -1,24 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/15 14:52:48 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/12/07 22:41:26 by nipostni         ###   ########.fr       */
+/*   Created: 2021/12/17 12:47:24 by Nipostni          #+#    #+#             */
+/*   Updated: 2021/12/29 22:14:46 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 
-int	ft_isascii(int c)
+void	ft_putnbr_fd(int n, int fd)
 {
-	c = c + 0;
-	if (c >= 0 && c <= 127)
-	{
-		return (1);
-	}
-	else
-		return (0);
+	long lon = n;
+	if (lon < 0)
+		{
+			ft_putchar_fd('-', fd);
+			lon = lon * -1;
+		}
+	if(lon >= 9)
+		ft_putnbr_fd(lon / 10, fd);
+	ft_putchar_fd((lon % 10) + '0', fd);
 }
+
+// int main(void)
+// {
+// 	// int n = -2147483648LL;
+// 	int fd = 1;
+// 	ft_putnbr_fd(123456, fd);
+// }

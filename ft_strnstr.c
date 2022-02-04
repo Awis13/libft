@@ -6,12 +6,13 @@
 /*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 15:13:40 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/12/07 11:28:37 by Nipostni         ###   ########.fr       */
+/*   Updated: 2022/02/03 15:43:18 by Nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include <string.h>
+#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
@@ -40,8 +41,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 //int main(void)
 //{
-//	char s[30] = "lorem ipsum dolor sit amet";
-//	char find[30] = "ipsumm";
+//	char *s = "lorem       ipsum dolor sit amet";
+//	char find[30] = " ";
 //	printf("%s ", ft_strnstr(s, find, 30));
 //	//ft_strnstr(s, find, 30);
 //}

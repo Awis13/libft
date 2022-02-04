@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
+/*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 10:25:03 by nipostni          #+#    #+#             */
-/*   Updated: 2021/12/07 11:33:10 by Nipostni         ###   ########.fr       */
+/*   Updated: 2022/01/03 18:16:28 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_atoi(const char *nptr)
 	sign = 1;
 	while (nptr[i] == ' ' || nptr[i] == '\t' || nptr[i] == '\n'
 		|| nptr[i] == '\f' || nptr[i] == '\r' || nptr[i] == '\v')
-			i++;
+		i++;
 	if ((nptr[i] == '+') || (nptr[i] == '-'))
 	{
 		if (nptr[i] == '-')
@@ -42,9 +42,9 @@ int	ft_atoi(const char *nptr)
 	return (number * sign);
 }
 
-// int main(void)
-// {
-// 	char c[30] = "469";
-// 	printf("%d My Atoi \n", ft_atoi(c));
-// 	printf("%d System Atoi \n", atoi(c));
-// }
+//  int main(int argc, char **argv)
+//  {
+//  	// char c[30] = "-+asdsda+-469";
+//  	printf("%d My Atoi \n", ft_atoi(argv[1]));
+//  	printf("%d System Atoi \n", atoi(argv[1]));
+//  }

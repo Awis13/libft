@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
+/*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 10:53:23 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/12/01 11:52:16 by Nipostni         ###   ########.fr       */
+/*   Updated: 2022/01/17 17:58:37 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
 	unsigned int	i;
 
-i = 0;
+	i = 0;
 	while (*s1 && n && (*s1 == *s2))
 	{
-	s1++;
-	s2++;
-	n--;
+		s1++;
+		s2++;
+		n--;
 	}
 	if (n == 0)
 	{
@@ -33,9 +33,9 @@ i = 0;
 	}
 }
 
-//int main(void)
-//{
-//	char s1[20] = "test\200";
-//	char s2[20] = "test\0";
-//	printf("%d ", ft_strncmp(s1, s2, 6));
-//}
+// int main(void)
+// {
+// 	char *s1 = "test\200";
+// 	char *s2 = "test\0";
+// 	printf("%d ", ft_strncmp(s1, s2, 6));
+// }

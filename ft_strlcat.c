@@ -3,19 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
+/*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 14:48:36 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/11/24 17:05:47 by Nipostni         ###   ########.fr       */
+/*   Updated: 2022/01/17 17:48:02 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 #include <stdio.h>
 #include <string.h>
-
-unsigned int	ft_strlen(const char *str);
-void			*ft_memcpy(void *dest, const void *src, size_t n);
 
 size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t size)
 {
@@ -45,11 +42,12 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t size)
 	return (d_len + source_len);
 }
 
-//int main(void)
-//{
-//	char first[] = "This is ";
-//    char last[] = "a potentially long string";
-//    int size = 35; 
-//	ft_strlcat(first, last, size);
-//	printf("%s", first);
-//}
+// int main(void)
+// {
+// 	char dest[30]; memset(dest, 0, 30);
+// 	char * src = (char *)"AAAAAAAAA";
+// 	int size = 6; 
+// 	ft_strlcat(dest, src, size);
+// 	printf("%s", dest);
+
+// }

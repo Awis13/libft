@@ -3,20 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
+/*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 10:46:58 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/11/16 10:48:37 by Nipostni         ###   ########.fr       */
+/*   Updated: 2021/12/07 22:41:21 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_isprint(int argument)
+int	ft_isprint(int c)
 {
-	char	c;
-
-	c = argument + 0;
+	c = c + 0;
 	if (c >= 32 && c < 127)
 	{
 		return (1);

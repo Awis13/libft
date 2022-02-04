@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
+/*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 12:20:58 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/12/07 12:37:28 by Nipostni         ###   ########.fr       */
+/*   Updated: 2021/12/07 21:12:53 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strdup(const char *s)
 
 	len = ft_strlen(s);
 	t = malloc(len + 1);
+	if (!t)
+		return (NULL);
 	ft_memcpy(t, s, len);
 	t[len] = '\0';
 	return (t);

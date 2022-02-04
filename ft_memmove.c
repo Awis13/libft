@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
+/*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 14:31:42 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/11/17 14:45:15 by Nipostni         ###   ########.fr       */
+/*   Updated: 2022/01/04 17:04:19 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 	int		i;
 
 	i = 0;
+	if (dst == NULL && src == NULL)
+		return (NULL);
 	dstt = (char *) dst;
 	srct = (char *) src;
 	if (dstt > srct)

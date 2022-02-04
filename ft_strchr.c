@@ -6,7 +6,7 @@
 /*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 14:34:55 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/11/25 15:28:40 by Nipostni         ###   ########.fr       */
+/*   Updated: 2022/02/03 15:48:53 by Nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,15 +26,15 @@ char	*ft_strchr(const char *str, int ch)
 		}
 		if (str[i] == '\0')
 			return (0);
-	i++;
+		i++;
 	}
 	return ((char *) str);
 }
 
 //int main(void)
 //{
-//const char str[] = "00000000sadadasd00000000test123";
-//const char ch = '1';
+//const char str[] = "        sadadasd00000000test123";
+//const char ch = ' ';
 
 //ft_strchr(str, ch);
 

@@ -6,7 +6,7 @@
 #    By: Nipostni <awis@me.com>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/07 11:05:52 by rchallie          #+#    #+#              #
-#    Updated: 2021/12/07 16:12:39 by Nipostni         ###   ########.fr        #
+#    Updated: 2021/12/07 16:15:14 by Nipostni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,8 +41,6 @@ ft_substr.c	\
 
 NAME = libft.a
 
-
-
 OBJS_DIR = objs/
 OBJS = $(SRCS:.c=.o)
 OBJECTS_PREFIXED = $(addprefix $(OBJS_DIR), $(OBJS))
@@ -58,7 +56,6 @@ $(OBJS_DIR)%.o : %.c libft.h
 	@mkdir -p $(OBJS_DIR)
 	@echo "Compiling: $<"
 	@clang $(CC_FLAGS) -c $< -o $@ -Wextra -Wall -Werror
-	
 
 $(NAME): $(OBJECTS_PREFIXED)
 	@ar r $(NAME) $(OBJECTS_PREFIXED)
@@ -77,3 +74,4 @@ re: fclean all
 bonus: $(OBJECTS_BONUS_PREFIXED)
 	@ar r $(NAME) $(OBJECTS_BONUS_PREFIXED)
 	@echo "Libft Bonus Done !"
+

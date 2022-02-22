@@ -6,17 +6,14 @@
 /*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 10:53:23 by Nipostni          #+#    #+#             */
-/*   Updated: 2022/01/17 17:58:37 by nipostni         ###   ########.fr       */
+/*   Updated: 2022/02/22 15:29:06 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+int	ft_strncmp(const char *s1, const char *s2, unsigned int n)
 {
-	unsigned int	i;
-
-	i = 0;
 	while (*s1 && n && (*s1 == *s2))
 	{
 		s1++;
@@ -24,18 +21,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 		n--;
 	}
 	if (n == 0)
-	{
 		return (0);
-	}
 	else
-	{
 		return (*(unsigned char *)s1 - *(unsigned char *)s2);
-	}
 }
-
-// int main(void)
-// {
-// 	char *s1 = "test\200";
-// 	char *s2 = "test\0";
-// 	printf("%d ", ft_strncmp(s1, s2, 6));
-// }

@@ -6,19 +6,17 @@
 /*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 10:25:03 by nipostni          #+#    #+#             */
-/*   Updated: 2022/01/03 18:16:28 by nipostni         ###   ########.fr       */
+/*   Updated: 2022/02/22 15:28:05 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 int	ft_atoi(const char *nptr)
 {
-	int		i;
-	long	number;
-	char	sign;
+	int			i;
+	long long	number;
+	char		sign;
 
 	number = 0;
 	i = 0;
@@ -29,9 +27,7 @@ int	ft_atoi(const char *nptr)
 	if ((nptr[i] == '+') || (nptr[i] == '-'))
 	{
 		if (nptr[i] == '-')
-		{
 			sign = -sign;
-		}
 		i++;
 	}
 	while (nptr[i] >= '0' && nptr[i] <= '9')
@@ -41,10 +37,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (number * sign);
 }
-
-//  int main(int argc, char **argv)
-//  {
-//  	// char c[30] = "-+asdsda+-469";
-//  	printf("%d My Atoi \n", ft_atoi(argv[1]));
-//  	printf("%d System Atoi \n", atoi(argv[1]));
-//  }

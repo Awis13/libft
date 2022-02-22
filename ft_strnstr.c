@@ -3,15 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
+/*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/01 15:13:40 by Nipostni          #+#    #+#             */
-/*   Updated: 2022/02/03 15:43:18 by Nipostni         ###   ########.fr       */
+/*   Updated: 2022/02/22 15:29:13 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
@@ -38,11 +36,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-
-//int main(void)
-//{
-//	char *s = "lorem       ipsum dolor sit amet";
-//	char find[30] = " ";
-//	printf("%s ", ft_strnstr(s, find, 30));
-//	//ft_strnstr(s, find, 30);
-//}

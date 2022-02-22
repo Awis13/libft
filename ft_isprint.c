@@ -6,11 +6,11 @@
 /*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 10:46:58 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/12/07 22:41:21 by nipostni         ###   ########.fr       */
+/*   Updated: 2022/02/14 20:09:52 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

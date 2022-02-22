@@ -6,13 +6,11 @@
 /*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 12:44:09 by Nipostni          #+#    #+#             */
-/*   Updated: 2022/01/03 18:55:54 by nipostni         ###   ########.fr       */
+/*   Updated: 2022/02/22 15:28:04 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdbool.h>
-#include <stdio.h>
 
 int	ft_int_count(int n)
 {
@@ -57,11 +55,3 @@ char	*ft_itoa(int n)
 	}
 	return (c);
 }
-
-// int	main()
-// {
-// 	int s = 0;
-// 	printf("%s", ft_itoa(s));
-// 	//ft_itoa(s);
-
-// }

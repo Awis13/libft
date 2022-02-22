@@ -3,42 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
+/*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 14:34:55 by Nipostni          #+#    #+#             */
-/*   Updated: 2022/02/03 15:48:53 by Nipostni         ###   ########.fr       */
+/*   Updated: 2022/02/22 15:28:24 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *str, int ch)
 {
 	int	i;
+	int	safe;
 
 	i = 0;
+	if (ch > 256)
+		safe = ch - 256;
+	else
+		safe = ch;
 	while (str)
 	{
-		if (str[i] == ch)
-		{
+		if (str[i] == safe)
 			return ((char *)str + i);
-		}
 		if (str[i] == '\0')
 			return (0);
 		i++;
 	}
 	return ((char *) str);
 }
-
-//int main(void)
-//{
-//const char str[] = "        sadadasd00000000test123";
-//const char ch = ' ';
-
-//ft_strchr(str, ch);
-
-//printf("String after |%c| is - |%s|\n", ch, ft_strchr(str, ch));
-//printf("String after |%c| is - |%s|\n", ch, strchr(str, ch));
-
-//} 

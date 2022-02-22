@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
+/*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 13:27:37 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/11/25 13:33:39 by Nipostni         ###   ########.fr       */
+/*   Updated: 2022/02/22 15:29:35 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_tolower(int ch)
 {
@@ -19,9 +19,3 @@ int	ft_tolower(int ch)
 	else
 		return (ch);
 }
-
-//int main(void)
-//{
-//	char ch = 'B';
-//	printf("%c after function call is — %c ", ch, ft_tolower(ch));
-//}

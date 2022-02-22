@@ -6,12 +6,11 @@
 /*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 12:20:58 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/12/07 21:12:53 by nipostni         ###   ########.fr       */
+/*   Updated: 2022/02/14 20:11:12 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strdup(const char *s)
 {

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Nipostni <awis@me.com>                     +#+  +:+       +#+        */
+/*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 11:39:48 by Nipostni          #+#    #+#             */
-/*   Updated: 2021/12/07 12:49:12 by Nipostni         ###   ########.fr       */
+/*   Updated: 2022/02/22 15:28:53 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t n)
 	}
 	return (srclen);
 }
-
-//int main (void)
-//{
-//	char src [20] = "TESTsadasdasda";
-//	char dst [20] = "DESTANATION";
-//	ft_strlcpy(dst, src, 7);
-//	printf("%s", dst);
-//}

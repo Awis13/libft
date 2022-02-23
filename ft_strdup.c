@@ -6,7 +6,7 @@
 /*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 12:20:58 by Nipostni          #+#    #+#             */
-/*   Updated: 2022/02/14 20:11:12 by nipostni         ###   ########.fr       */
+/*   Updated: 2022/02/23 13:27:09 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,3 @@ char	*ft_strdup(const char *s)
 	t[len] = '\0';
 	return (t);
 }
-
-//int main(void)
-//{
-//    const char *s1 = "String";
-//    char *s2 = ft_strdup(s1);
-//	printf("%s, %s", s1, s2);
-//}

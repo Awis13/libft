@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: nipostni <awis@me.com>                     +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/12/05 22:47:13 by nipostni          #+#    #+#              #
-#    Updated: 2022/12/05 23:07:08 by nipostni         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 # Compiler and flags
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -Iinclude
@@ -46,28 +34,28 @@ all: $(NAME)
 
 # Build library
 $(NAME): $(OBJS)
+	@printf "\e[32mBuilding library...\n\e[0m"
 	@ar rcs $(NAME) $(OBJS)
-	@echo "libft.a is ready"
+	@printf "\e[32mDone! libft.a is ready.\n\e[0m"
 
 # Compile source files
 build/%.o: src/%.c
 	@$(CC) $(CFLAGS) -c $< -o $@
-	@echo "Compiled "$<" successfully!"
+	@printf "\e[36mCompiled %s successfully!\n\e[0m" $<
 
 # Clean object files
 clean:
 	@rm -f $(OBJS) $(BONUS_OBJS)
-	@echo "Object files removed!"
+	@printf "\e[31mObject files removed!\n\e[0m"
 
 # Clean object files and library
 fclean: clean
 	@rm -f $(NAME)
-	@echo "Library removed!"
+	@printf "\e[31mLibrary removed!\n\e[0m"
 
 # Full clean and rebuild
 re: fclean $(NAME)
 
 # Build library with bonus files
 bonus: $(OBJS) $(BONUS_OBJS)
-	@ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
-	@echo "libft.a BONUS is ready"
+	@printf "\e[32mBuilding library with bonus files...\

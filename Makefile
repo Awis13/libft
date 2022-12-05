@@ -30,6 +30,7 @@ NAME = libft.a
 
 .PHONY: all clean fclean re bonus
 
+# Default rule: build library
 all: $(NAME)
 
 # Build library
@@ -58,4 +59,4 @@ re: fclean $(NAME)
 
 # Build library with bonus files
 bonus: $(OBJS) $(BONUS_OBJS)
-	@printf "\e[32mBuilding library with bonus files...\
+	@printf "\e[32mBuilding library with bonus

@@ -1,1 +1,18 @@
 libft-war-machine/
+# Object files
+build/*.o
+
+# Library
+libft.a
+
+# Mac-specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon
+Icon?
+
+# Thumbnails
+._*
+Thumbs.db

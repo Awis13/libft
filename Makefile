@@ -59,4 +59,6 @@ re: fclean $(NAME)
 
 # Build library with bonus files
 bonus: $(OBJS) $(BONUS_OBJS)
-	@printf "\e[32mBuilding library with bonus
+	@printf "\e[32mBuilding library with bonus files...\n\e[0m"
+	@ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
+	@printf "\e[32mDone! libft.a BONUS is ready.\n\e[0m"

@@ -39,6 +39,11 @@ $(NAME): $(OBJS)
 	@ar rcs $(NAME) $(OBJS)
 	@printf "\e[32mDone! libft.a is ready.\n\e[0m"
 
+# Create build directory if it does not exist
+$(OBJS): | build
+build:
+	@mkdir -p build
+
 # Compile source files
 build/%.o: src/%.c
 	@$(CC) $(CFLAGS) -c $< -o $@

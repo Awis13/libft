@@ -6,11 +6,12 @@
 /*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 00:25:13 by nipostni          #+#    #+#             */
-/*   Updated: 2022/12/06 00:27:28 by nipostni         ###   ########.fr       */
+/*   Updated: 2022/12/06 01:04:47 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/libft.h"
+#include <stdio.h>
 
 /*
 ** The ft_atoi function converts a string representation of an integer to its
@@ -38,3 +39,18 @@ int	ft_atoi(const char *nptr)
 		result = result * 10 + (nptr[i++] - '0');
 	return (result * sign);
 }
+
+// int	main(void)
+// {
+// 	const char *str1 = "42";
+// 	const char *str2 = "-13";
+// 	const char *str3 = "   17";
+// 	const char *str4 = "  +15";
+
+// 	printf("%d\n", ft_atoi(str1));
+// 	printf("%d\n", ft_atoi(str2));
+// 	printf("%d\n", ft_atoi(str3));
+// 	printf("%d\n", ft_atoi(str4));
+
+// 	return (0);
+// }

@@ -6,11 +6,11 @@
 /*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 10:55:49 by Nipostni          #+#    #+#             */
-/*   Updated: 2022/12/06 00:35:40 by nipostni         ###   ########.fr       */
+/*   Updated: 2022/12/06 20:37:44 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "libft.h"
 
 void *ft_calloc(size_t count, size_t size)
 {

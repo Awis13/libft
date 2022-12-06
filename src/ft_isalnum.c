@@ -6,7 +6,7 @@
 /*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 14:34:49 by Nipostni          #+#    #+#             */
-/*   Updated: 2022/12/06 00:41:49 by nipostni         ###   ########.fr       */
+/*   Updated: 2022/12/06 20:37:51 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 ** otherwise it returns 0 (false).
 */
 
-#include "../include/libft.h"
+#include "libft.h"
 #include <stdio.h>
 
 int	ft_isalnum(int c)

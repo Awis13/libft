@@ -6,11 +6,11 @@
 /*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 00:25:13 by nipostni          #+#    #+#             */
-/*   Updated: 2022/12/06 01:04:47 by nipostni         ###   ########.fr       */
+/*   Updated: 2022/12/06 20:37:21 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/libft.h"
+#include "libft.h"
 #include <stdio.h>
 
 /*

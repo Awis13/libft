@@ -1,6 +1,6 @@
 # Compiler and flags
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -Iinclude
+CFLAGS = -Wall -Wextra -Werror -I include
 
 # List of source files
 SRCS = ft_memset.c ft_bzero.c ft_memcpy.c \

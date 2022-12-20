@@ -6,7 +6,7 @@
 /*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 13:21:57 by Nipostni          #+#    #+#             */
-/*   Updated: 2022/12/06 21:01:06 by nipostni         ###   ########.fr       */
+/*   Updated: 2022/12/20 17:37:37 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,13 @@
 ** to the specified value c.
 */
 
-void	*ft_memset(void *s, int c, size_t n)
+void *ft_memset(void *s, int c, size_t n)
 {
-	unsigned char	*p;
+    unsigned char *dest_ptr = (unsigned char *)s;
 
-	p = (unsigned char *)s;
-	while (n--)
-	{
-		*p++ = (unsigned char)c;
-	}
-	return (s);
+    while (n--)
+    {
+        *dest_ptr++ = (unsigned char)c;
+    }
+    return s;
 }

@@ -6,23 +6,24 @@
 /*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/16 14:22:59 by Nipostni          #+#    #+#             */
-/*   Updated: 2022/02/22 15:30:11 by nipostni         ###   ########.fr       */
+/*   Updated: 2022/12/20 17:55:35 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
-{
-	int	i;
+/*
+** Writes the string 's' to the file descriptor 'fd'.
+*/
 
-	i = 0;
-	if (s)
-	{
-		while (s[i])
-		{
-			write(fd, &s[i], 1);
-			i++;
-		}
-	}
+void ft_putstr_fd(char *s, int fd)
+{
+    if (s)
+    {
+        while (*s)
+        {
+            write(fd, s, 1);
+            s++;
+        }
+    }
 }

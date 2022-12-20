@@ -5,26 +5,38 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/01 12:37:17 by Nipostni          #+#    #+#             */
-/*   Updated: 2022/02/14 20:10:12 by nipostni         ###   ########.fr       */
+/*   Created: 2022/12/20 16:27:39 by nipostni          #+#    #+#             */
+/*   Updated: 2022/12/20 16:35:08 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+** ft_memchr - searches for the first occurrence of a particular character
+**             in the first n bytes of the memory area pointed to by s.
+**
+** @s: pointer to the memory area to search
+** @c: character to search for
+** @n: number of bytes to search
+**
+** Returns a pointer to the matching byte, or NULL if the character is not found.
+*/
+
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t			i;
-	unsigned char	*tmp;
+	unsigned char *tmp;
+
+	if (s == NULL || n == 0)
+		return (NULL);
 
 	tmp = (unsigned char *)s;
-	i = 0;
-	while (i < n)
+	while (tmp < (unsigned char *)(s + n))
 	{
-		if (*tmp == (unsigned char) c)
+		if (*tmp ^ (unsigned char) c)
+			tmp++;
+		else
 			return ((void *)tmp);
-		tmp++;
-		i++;
 	}
-	return (0);
+	return (NULL);
 }

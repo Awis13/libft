@@ -5,20 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/16 10:46:58 by Nipostni          #+#    #+#             */
-/*   Updated: 2022/02/14 20:09:52 by nipostni         ###   ########.fr       */
+/*   Created: 2022/12/20 15:42:19 by nipostni          #+#    #+#             */
+/*   Updated: 2022/12/20 15:42:35 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+/*
+** Check if c is a printable ASCII character (' ' to '~')
+*/
+
+int ft_isprint(int c)
 {
-	c = c + 0;
-	if (c >= 32 && c < 127)
-	{
-		return (1);
-	}
-	else
-		return (0);
+    return (c >= 32 && c <= 126);
 }

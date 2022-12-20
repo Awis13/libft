@@ -5,20 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nipostni <awis@me.com>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/15 14:52:48 by Nipostni          #+#    #+#             */
-/*   Updated: 2022/02/14 20:09:44 by nipostni         ###   ########.fr       */
+/*   Created: 2022/12/20 15:34:39 by nipostni          #+#    #+#             */
+/*   Updated: 2022/12/20 15:38:01 by nipostni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(int c)
+// Check if c is a valid ASCII character (0 to 127 inclusive)
+
+int ft_isascii(int c)
 {
-	c = c + 0;
-	if (c >= 0 && c <= 127)
-	{
-		return (1);
-	}
-	else
-		return (0);
+    return (c >= 0 && c <= 127);
 }
